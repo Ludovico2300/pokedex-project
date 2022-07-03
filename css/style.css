@@ -42,7 +42,7 @@
 
 #pokedex {
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 #pokedex-label {
@@ -60,6 +60,17 @@ button{
 }
 
 .img-sprite-toshiny{
+    height: 80px;
+    width: 80px;
+}
+
+#pk-change{
     height: 30px;
     width: 30px;
+    margin: 5px;
+}
+
+#lbl-input-id{
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
