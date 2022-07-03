@@ -1,20 +1,45 @@
-#container{
+#m-container {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid black;
+    border-radius: 15%;
+    height: fit-content;
+    width: fit-content;
+    margin: 5px;
+}
+
+#sprite-container {
     display: flex;
     flex-direction: column;
-    border: 5px solid black;
+    height: 280px;
+    width: 200px;
+}
+
+.pk-sprite{
+    height: 200px;
+    width: 200px;
+}
+
+#info-container {
+    display: flex;
+    flex-direction: column;
     height: fit-content;
     width: fit-content;
 }
 
-#pokedex{
+#pokedex {
     font-weight: bold;
-    
+    text-transform: uppercase;
 }
 
-#pokedex-label{
+#pokedex-label {
     text-decoration: underline;
     font-style: italic;
     font-weight: bolder;
     font-size: 21px;
     color: black;
+}
+
+button{
+    margin: 5px;
 }
