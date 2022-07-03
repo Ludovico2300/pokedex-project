@@ -1,3 +1,9 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
 #m-container {
     display: flex;
     flex-direction: row;
@@ -13,6 +19,7 @@
     flex-direction: column;
     height: 280px;
     width: 200px;
+    align-items: center;
 }
 
 .pk-sprite{
@@ -25,6 +32,12 @@
     flex-direction: column;
     height: fit-content;
     width: fit-content;
+}
+
+#btn-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #pokedex {
@@ -42,4 +55,11 @@
 
 button{
     margin: 5px;
+    height: 30px;
+    width: fit-content;
+}
+
+.img-sprite-toshiny{
+    height: 30px;
+    width: 30px;
 }
