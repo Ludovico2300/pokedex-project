@@ -42,6 +42,9 @@
 
 #pokedex {
     font-weight: bold;
+}
+
+.pk-name {
     text-transform: capitalize;
 }
 

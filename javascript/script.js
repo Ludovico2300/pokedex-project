@@ -33,13 +33,21 @@ function findPokemon() {
 
             const pkNameH3 = document.querySelector(".pk-name");
             const pkNumberH3 = document.querySelector(".pk-number");
+            const pkDescriptionH3 = document.querySelector(".pk-description");
             const pkSpriteIMG = document.querySelector(".pk-sprite");
 
             pkNameH3.innerHTML = respParsed.name;
             pkNumberH3.innerHTML = `#${respParsed.id}`;
             pkSpriteIMG.setAttribute("src", `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${userId}.png`);
 
+            const descriptionEn = respParsed.flavor_text_entries.find(entry => entry.language.name === "it").flavor_text;
+            pkDescriptionH3.innerHTML = descriptionEn;
+
+
+
         })
+
+
 }
 
 function seeMore() {
@@ -55,13 +63,13 @@ function seeMore() {
 
 function changeSprite() {
     const pkSpriteIMG = document.querySelector(".pk-sprite");
-    
-    if (pkSpriteIMG.src==`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${userId}.png`) {
+
+    if (pkSpriteIMG.src == `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${userId}.png`) {
         pkSpriteIMG.setAttribute("src", `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${userId}.png`);
-    } else if (pkSpriteIMG.src==`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${userId}.png`) {
+    } else if (pkSpriteIMG.src == `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${userId}.png`) {
         pkSpriteIMG.setAttribute("src", `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${userId}.png`);
-    } 
-  }
+    }
+}
 
 function previousPokemon() {
     if (userId >= 2) {
